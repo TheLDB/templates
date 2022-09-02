@@ -1,11 +1,17 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
-  provider = "prisma-client-js"
+  provider = "cargo prisma"
+  output   = "../src/prisma.rs"
 }
 
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
+}
+
+model Users {
+  id             String @id @default("64") @db.VarChar
+  discord_id     String @unique
+  discord_name   String @default("64") @db.VarChar
+  discord_avatar String @default("32") @db.VarChar
+  cookie_secret  String @unique
 }
