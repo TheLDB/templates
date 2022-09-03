@@ -1,5 +1,7 @@
 # Builds
 target/
+node_modules/
 
 # Secrets
 .env
+.env.user
