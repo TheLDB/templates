@@ -8,3 +8,6 @@ A simple Axum webserver template
 ## [prisma_axum_template](./prisma_axum_template/)
 A simple Axum webserver with [prisma-client-rust](https://github.com/Brendonovich/prisma-client-rust) support thanks to [Brendonovich](https://github.com/Brendonovich)
     - Use [cargo-generate](https://github.com/cargo-generate/cargo-generate) to clone/generate this
+
+## [nextjs-tailwind-template](./nextjs-tailwind-template/)
+A NextJS TailwindCSS web app
